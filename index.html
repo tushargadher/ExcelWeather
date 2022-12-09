@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="home">
+            <div class="time">
+                <div class="name">Excel Weather&nbsp;<img src="NameIcon.png" height="44%" id="img"></div>
+                <div class="currTime">
+
+                </div>
+            </div>
+            <div class="weather">
+                <div class="temp">
+                    <span id="tempCal"></span>
+                </div>
+                <div class="Cname">
+                    <span id="cityname"></span>
+                    <span id="dt"></span>
+                </div>
+                <!-- <div class="refresh">
+                    <div id="refreshBtn"><img src="refresh.png" alt=""></div>
+                </div> -->
+            </div>
+        </div>
+        <div class="weather_info">
+            <div class="search">
+                <input type="text" placeholder="Search other cite" id="entercity">
+                <input type="button" value="&#x1F50E;&#xFE0E;" id="submit">
+            </div>
+            <div class="more_info">
+                <span class="head" id="head"></span>
+                <table border="1">
+                    <tr>
+                        <th>Wind Speed</th>
+                        <th id="Wspeed" class="text-end">Loading...</th>
+                    </tr>
+                    <tr>
+                        <th>Humidity</th>
+                        <th id="humidity" class="text-end">Loading...</th>
+                    </tr>
+                    <tr>
+                        <th>Cloudy</th>
+                        <th id="cloudy" class="text-end">Loading...</th>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="otherCity">
+                <span class="head">Weather of Popular Cites</span>
+                <table border="1">
+                    <tr>
+                        <th>Gandhinagar</th>
+                        <th id="GNDW" class="text-end">Loading...</th>
+                    </tr>
+                    <tr>
+                        <th>RajKot</th>
+                        <th id="AMDW" class="text-end">Loading...</th>
+                    </tr>
+                    <tr>
+                        <th>Vadodara</th>
+                        <th id="VDRW" class="text-end">Loading...</th>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
